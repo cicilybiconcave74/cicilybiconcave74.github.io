@@ -1,0 +1,26 @@
+# ---------------------------------------------------------------
+# GitHub Pages configuration
+# Change a value, commit, and the site rebuilds in about a minute.
+# ---------------------------------------------------------------
+
+title: Jennifer Bridgens
+description: Case studies in search, taxonomy, and ontology.
+
+# The look of the site. Swap this one line for any of:
+#   jekyll-theme-minimal     (left sidebar, quiet, portfolio-friendly)
+#   jekyll-theme-cayman      (wide gradient banner)
+#   jekyll-theme-slate       (dark header)
+#   jekyll-theme-architect   (condensed, technical)
+theme: jekyll-theme-minimal
+
+# Hides the "Download .zip / .tar.gz" buttons the minimal theme adds.
+show_downloads: false
+
+# No baseurl line here on purpose. A repo named wordherder.github.io
+# publishes at the root of the domain, so the site lives at "/".
+# Only add a baseurl if you ever move this into a differently-named repo.
+
+# Files Jekyll should not publish to the site.
+exclude:
+  - README.md.bak
+  - .gitignore

@@ -1,40 +1,39 @@
-# Case Studies
+# Jennifer Bridgens — Case Studies
 
-Case studies from my work as a product owner, taxonomist, search 
-architect, and ontologist. These are a representative sample across 
-several employers, chosen to show the range of problems I've worked on 
-rather than the full volume of the work.
+*Just a librarian, keepin' calm and fightin' for the user, like Ranganathan taught us.*
 
-The contexts varied widely. Some roles were narrowly scoped to search 
-on consumer websites. In others I covered business research, analysis, 
-UX, product ownership, and QA myself. In others still, I worked within 
-end-to-end teams where each of those roles was held by a specialist. 
-The case studies reflect that range.
+Ten years of product ownership in search, taxonomy, and ontology — written up as case studies. Each one follows the same shape: the problem, the evidence, what was built, and what actually happened afterward (including the parts that didn't work).
 
-Each study notes whether the work was my own or collaborative with 
-data scientists and UX researchers.
+**Currently:** building an ontology and supporting taxonomies to give a large language model a narrower, more reliable worldview for video classification.
 
-## Studies
+---
 
-| Study | Domain | Role |
+## Case studies
+
+| Case study | What it covers | When |
 |---|---|---|
-| [Ontology for LLMs](studies/ontology-for-llms.md) | Ontology / LLM classification | Ontologist |
-| [Migration to New Search](studies/search-migration.md) | Search platform migration | Product Owner |
-| [Cross-Site Comparison of Searches](studies/cross-site-comparison.md) | Comparing customer searches | Product Owner |
-| [Too Many Clicks](studies/too-many-clicks.md) | Reducing clicks to a product | Product Owner |
-| [Type Ahead Redesign](studies/type-ahead-redesign.md) | Adding what the customer needed | Product Owner |
-| [Advanced Search](studies/advanced-search.md) | Creating advanced search features | Product Owner |
+| **[Ontology for LLMs](studies/ontology-for-llms.md)** | A nine-node ontology plus supporting taxonomies, built to constrain an LLM's video-clip classification — with precision/recall results from the first test round | 2025 – present |
+| **[Migration to Power BI](studies/migration-to-power-bi.md)** | Hundreds of reports moved off Qlik Sense against a contract-expiry deadline, with a brand-new team trained in Agile along the way | 2024 – 2025 |
+| **[Migration to New Search](studies/migration-to-new-search.md)** | Three concurrent platform migrations on one page; onsite search traffic went from under 1% to 5%, zero-result searches from 12% to 0.68% | 2021 – 2022 |
+| **[Cross-Site Search Comparison](studies/cross-site-search-comparison.md)** | 42,765 queries hand-tagged against a shared controlled vocabulary to test a widely held assumption about why search felt broken | 2022 |
+| **[Example User Story](studies/example-user-story.md)** | One missing API field, traced from problem to user story to Given/When/Then to test cases | 2021 – 2023 |
+| **[Too Many Clicks](studies/too-many-clicks.md)** | Over 80% of site searches were part numbers; adding them to auto-suggest cut the path to cart from three-plus clicks to one | 2016 – 2019 |
+| **[Type Ahead Redesign](studies/type-ahead-redesign.md)** | Reorganizing a crowded auto-suggest with no information hierarchy, tested with seven users | 2016 – 2019 |
+| **[Advanced Search](studies/advanced-search.md)** | Regex analysis of a million queries surfaced a real Boolean-operator niche — and usability testing said don't build it yet | 2016 – 2019 |
+| **[Country Selector](studies/country-selector.md)** | Currency and tax display for a newly global commerce site, solved with cookies and a header-level country picker | 2016 – 2019 |
 
-## A note on sources
+---
 
-These describe work performed for employers and clients. Company 
-names, internal terminology, and proprietary metrics have been 
-generalized or omitted. What remains is my own account of the 
-problems, methods, and outcomes.
+## What I work on
 
-## Citation
+**Search & findability** — query analysis, relevancy tuning, zero-result reduction, search platform migration (Autonomy, Coveo, Endeca, Solr/Lucene)
 
-Bridgens, J. (2026). *Case Studies in Search and Information 
-Architecture.* https://github.com/[jennbridgens]/case-studies
+**Ontology & taxonomy** — OWL/RDF/SKOS, controlled vocabularies, knowledge graphs, ontology design for LLM grounding
 
-Licensed under [CC BY 4.0](LICENSE).
+**Product ownership** — SAFe and Scrum, backlog refinement, requirements and acceptance criteria, usability testing, VOC analysis, stakeholder workshops
+
+---
+
+## Elsewhere
+
+- [LinkedIn](https://linkedin.com/in/jennbridgens)
