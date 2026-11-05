@@ -23,6 +23,7 @@ data scientists and UX researchers.
 | [Cross-Site Comparison of Searches](studies/cross-site-comparison.md) | Comparing customer searches | Product Owner |
 | [Too Many Clicks](studies/too-many-clicks.md) | Reducing clicks to a product | Product Owner |
 | [Type Ahead Redesign](studies/type-ahead-redesign.md) | Adding what the customer needed | Product Owner |
+| [Advanced Search](studies/advanced-search.md) | Creating advanced search features | Product Owner |
 
 ## A note on sources
 
